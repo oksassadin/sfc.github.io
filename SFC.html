@@ -1,0 +1,56 @@
+<html>
+  <head>
+    <title>SFC Frenchcore - Diós Briós</title>
+    <style>
+      body {
+        background-image: url("https://i9.ytimg.com/vi/V73EkD8ZiuA/mqdefault.jpg?v=62d70806&sqp=CMjwqZ8G&rs=AOn4CLAhxNawx55cql-TdQh-wA9Mi3ojRw");
+        background-size: cover;
+        color: black;
+      }
+      form {
+        background-color: black;
+        color: green;
+        padding: 20px;
+        border-radius: 10px;
+        text-align: center;
+        opacity: 0.9;
+      }
+      input[type="text"], input[type="password"] {
+        padding: 10px;
+        margin: 10px 0;
+        width: 250px;
+        border-radius: 5px;
+        border: none;
+        background-color: green;
+        color: black;
+      }
+      input[type="button"] {
+        padding: 10px 20px;
+        margin-top: 20px;
+        background-color: green;
+        color: black;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+      }
+    </style>
+    <script>
+      function checkLogin() {
+        var password = document.getElementById("password").value;
+        if (password === "SFC") {
+		  window.location.href = "https://soundcloud.com/oksa_roland/sfc-frenchcore-dios-brios?si=132d43cc83c84abd98079be7b336a0ee&utm_source=clipboard&utm_medium=text&utm_campaign=social_sharing";
+        } else {
+          alert("Rossz jelszó. Kérjük, próbálja újra.");
+        }
+      }
+    </script>
+  </head>
+  <body>
+    <h1>SFC Frenchcore - Diós Briós</h1>
+    <form>
+      <label for="password">Jelszó:</label>
+      <input type="password" id="password" name="password"><br><br>
+      <input type="button" value="Bejelentkezés" onclick="checkLogin()">
+    </form>
+  </body>
+</html>
